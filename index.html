@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>ChartStock</title>
+    <link rel="stylesheet" type="text/css" href="style.css">
+    <script type="text/javascript" src="https://s3.tradingview.com/tv.js"></script>
+    </head>
+    <body>
+    <header>
+        <h1>Dynamic Stock Data Presentation</h1>
+        <p>WELCOME !!!</p>
+    </header>
+    <main>
+        <form id="intraday-form">
+            <label for="symbol">Symbol:</label>
+            <select id="symbol" name="symbol" required>
+                <option value="IBM" checked>IBM</option>
+                <option value="AAPL">AAPL</option>
+                <option value="GOOGL">GOOGL</option>
+            </select>
+            <br>
+            <button type="submit">Get Data</button>
+        </form><br><br>
+        <div id="chart-container">
+            <div id="candlestick-chart"></div>
+        </div>
+    </main>
+    <script src="script.js"></script>
+</body>
+</html>
